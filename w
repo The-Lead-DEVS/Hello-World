@@ -17,7 +17,6 @@ public class Program
 		{
 			Console.WriteLine(num1 + op + num2);
 		}
-
 		if (numbers == "3")
 		{
 			Console.Write("What is your second sign? ");
@@ -26,7 +25,6 @@ public class Program
 			Double num3 = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine(num1 + op + num2 + op1 + num3);
 		}
-
 		if (numbers == "4")
 		{
 			Console.Write("What is your second sign? ");
@@ -39,7 +37,6 @@ public class Program
 			Double num4 = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine(num1 + op + num2 + op1 + num3 + op2 + num4);
 		}
-
 		if (numbers == "5")
 		{
 			Console.Write("What is your second sign? ");
@@ -56,7 +53,6 @@ public class Program
 			Double num5 = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine(num1 + op + num2 + op1 + num3 + op2 + num4 + op3 + num5);
 		}
-
 		Console.ReadLine();
 	}
 }
