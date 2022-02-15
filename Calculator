@@ -4,8 +4,11 @@ public class Program
 {
 	public static void Main()
 	{
+		bool IsInfa = true;
+		while (IsInfa == true)
+		{
 		Console.WriteLine("This is a calculator");
-		Console.Write("How many numbers do you want to have in the equation? (2-5) ");
+		Console.Write("How many numbers do you want to have in the equation? (2-6) ");
 		string numbers = Console.ReadLine();
 		Console.Write("What is your first number: ");
 		Double num1 = Convert.ToDouble(Console.ReadLine());
@@ -56,11 +59,33 @@ public class Program
 			Double num5 = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine(num1 + op + num2 + op1 + num3 + op2 + num4 + op3 + num5);
 		}
+		if (numbers == "6") 
+		{
+			Console.Write("What is your second sign? ");
+			string op1 = Console.ReadLine();
+			Console.Write("What is your third number? ");
+			Double num3 = Convert.ToDouble(Console.ReadLine());
+			Console.Write("What is your third sign? ");
+			string op2 = Console.ReadLine();
+			Console.Write("What is your fourth number? ");
+			Double num4 = Convert.ToDouble(Console.ReadLine());
+			Console.Write("What is your fourth sign? ");
+			string op3 = Console.ReadLine();
+			Console.Write("What is your fith number? ");
+			Double num5 = Convert.ToDouble(Console.ReadLine());
+			Console.Write("What is your fourth sign? ");
+			string op4 = Console.ReadLine();
+			Console.Write("What is your sixth number? ");
+			Double num6 = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine(num1 + op + num2 + op1 + num3 + op2 + num4 + op3 + num5 + op4 + num6);
+		}
 		else 
 		{
 			Console.WriteLine("ERROR invaild Argument");
 			Console.WriteLine("Visit https://github.com/The-Lead-DEVS/simple-Calculator/blob/main/Calculator for more information");
-		}
+		} 
 		Console.ReadLine();
+		}
+		
 	}
 }
